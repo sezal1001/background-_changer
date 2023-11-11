@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background-Changer</title>
+    <style>
+        body{
+            margin: 0px;
+            
+        }
+        h1{
+            text-align: center;
+            text-decoration:underline;
+        }
+        img{
+            /* padding-left: 250px; */
+            width:1000px;
+            height:550px;  
+            padding-left:250px;
+            margin:0 auto;
+        }
+        p{
+            padding: 20px 50px;
+            text-align: justify;
+        }
+        .btn{
+            width: 20px;
+            height:20px;
+            display: inline-block;
+            border: solid grey 2px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        #cadet-blue{
+           background-color:cadetblue;
+        }
+        #aqua{
+          background-color: aqua;
+        }
+        #violet{
+           background-color: violet;
+        }
+        #black{
+           background-color: black;
+        }
+        #color-switcher{
+            text-align: right;
+            margin-right: 150px;
+            margin-top: 40px;
+         }
+        
+        /* @media(max-width:700px) {
+           img{
+              margin-left:5px;
+           }    
+        } */
+    </style>
+</head>
+<body>
+    <div id="color-switcher">
+        <span class="btn" id="cadet-blue" onclick="changeBG('#5F9EA0')"></span>
+        <span class="btn" id="aqua" onclick="changeBG('#7fffd4')"></span>
+        <span class="btn" id="violet" onclick="changeBG('#ce9aff')"></span>
+        <span class="btn" id="black" onclick="changeBG('#000000')"></span>
+
+    </div>
+       <h1 class="text">Background-Changer</h1>
+     <img src="images/35151812-business-people-working-together.jpg"   alt="" srcset="">
+       <!-- <img src="https://www.susangreenecopywriter.com/wp-content/uplaods/2013/01/iStock_000039291924_Medium.jpg" alt="" srcset=""> -->
+<p class="text">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia veniam dolor, nemo reprehenderit, quisquam amet delectus ullam facilis iste voluptatem autem ratione iusto qui voluptate beatae sed impedit debitis quasi libero voluptatibus numquam. Accusamus et soluta illum accusantium deleniti aliquid mollitia ipsa ab repudiandae quaerat ut nam blanditiis repellendus, neque, ducimus dignissimos quis iusto doloribus, quisquam iure voluptate dolores? Sit tenetur adipisci quam unde vitae totam aut, cupiditate asperiores excepturi consequuntur officiis quidem voluptatum! Eligendi dicta commodi molestias ducimus nam? Commodi dolore rerum nihil, nam velit sit delectus consectetur, quidem, voluptates distinctio inventore aperiam voluptas. Sequi, fugit, molestiae temporibus eligendi nostrum cupiditate dolores aperiam veniam autem mollitia animi voluptas voluptatum similique veritatis eaque officiis provident sed voluptatibus facere vero. Minima dolore nesciunt at? Obcaecati suscipit vero cumque non error, doloribus laudantium? Laborum aut maxime veritatis fugit recusandae quo ullam, reprehenderit architecto! Obcaecati commodi dolor exercitationem, fugit voluptatem reprehenderit possimus rerum fugiat accusantium aliquam quia itaque quaerat reiciendis, sapiente eaque omnis excepturi alias facere, blanditiis suscipit tempora cupiditate necessitatibus ea! Itaque impedit, laudantium natus facere in doloribus dignissimos quisquam molestias maiores. Odio autem soluta temporibus ex illo, debitis quaerat veniam maxime nobis, enim, voluptas voluptatum tenetur culpa facilis unde minus? Necessitatibus deserunt, libero quod fuga saepe fugit aspernatur voluptatem nulla sapiente ullam perferendis aliquid itaque omnis. At quae quod autem dolore aspernatur. Corporis ex delectus quod fugiat! Fuga labore dolores sit dignissimos provident similique nostrum iure consectetur eos maiores recusandae neque sint, dolorem perspiciatis ex porro aspernatur. Maiores itaque tempora debitis adipisci quas culpa nemo exercitationem harum impedit, et minus quibusdam provident qui, assumenda sint ipsum inventore tempore dolore quo. Aspernatur ad in inventore quaerat, perspiciatis reprehenderit possimus dolore doloribus delectus eos corrupti impedit nemo reiciendis porro obcaecati, a quod. Magni sint, tempora, sit voluptatibus ratione distinctio, libero totam quaerat quos doloremque beatae voluptas? Perspiciatis sit ex iure totam earum ea. Velit necessitatibus incidunt dolore consequuntur assumenda laboriosam mollitia ex eligendi placeat, ab quia aperiam accusamus illo quidem similique, aut ipsum? Illo voluptates iure, aliquam dolorum quasi aspernatur, eaque quisquam corporis tempore doloribus quas voluptas in iste consequuntur placeat sunt, mollitia cupiditate nihil maiores! Pariatur ipsa repellat officiis perspiciatis, delectus dolores, repudiandae blanditiis, consequatur eaque minus laborum natus corrupti. Earum accusantium adipisci repudiandae perferendis autem, porro repellat, ratione sit minus cum, quam eum optio? Similique in aut blanditiis tempora maxime sapiente cupiditate repellendus quod earum doloribus necessitatibus nihil fugiat delectus quaerat labore ab ipsam nesciunt, explicabo autem harum, soluta ad dolor quam. Harum maxime, expedita quod neque enim aspernatur provident adipisci ea repellat illo aliquid. Iure itaque animi, dolor esse et illum reprehenderit tenetur aut at consectetur explicabo natus corrupti voluptatem similique sint ad accusantium dignissimos necessitatibus. Excepturi officiis quaerat nulla aut necessitatibus veritatis magnam? Beatae nemo nisi eaque eum, non, perspiciatis aliquid officia nihil quis quia, ut molestiae ducimus obcaecati. Perspiciatis eligendi quis tempora exercitationem ipsum nemo provident. Omnis unde amet, in labore rerum beatae doloribus facilis doloremque asperiores quisquam sit excepturi illo ad, cumque quis velit veniam quibusdam sapiente.
+</p>   
+   <script>
+    function changeBG(color){
+        document.body.style.backgroundColor=color;
+        let txt=document.getElementsByClassName("text");
+        if(color=="#000000"){
+            for(let elm of txt){
+                elm.style.color="white";
+            }
+        }else{
+            for(let elm of txt){
+              elm.style.color="black";
+            }
+        }
+    }
+   </script>
+</body> 
+</html>
